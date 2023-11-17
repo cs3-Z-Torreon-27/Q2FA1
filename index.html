@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "keywords" content = "Links, visited, transform">
+    <meta name = "author" content = "Zacchaeus John G. Torreon">
+    <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
+        <title>Links</title>
+</head>
+<body>
+    <center>
+        <a class = "one" href = #div1>This is link 1</a><br>
+        <a class = "two" href = "#div2">This is link 2</a><br>
+
+        <div id = "div1">This is div 1</div><br>
+        <div id = "div2" >This is div 2</div><br>
+    </center>
+</body>
+<style>
+    a.one:link{
+        color:aqua;
+        background-color: orange;   
+    }
+    a.one:visited{
+        color: green;
+        background-color: purple;
+    }
+    a.one:hover{
+        color:yellow;
+        background-color: red;
+    }
+    a.one:active{
+        color:orange;
+        background-color: blue;
+    }
+    a.two:link{
+        color:aqua;
+        background-color: yellow;
+    }
+    a.two:visited{
+        color: blue;
+        background-color: red;
+    }
+    
+    a.two:hover{
+        color:yellow;
+        background-color: red;
+    }
+    a.two:active{
+        color:orange;
+        background-color: blue;
+    }
+    #div1{
+        text-align: center;
+        padding: 10px;
+        margin:10px;
+        border: 2px double black;
+    }
+    #div2{
+        text-align: center;
+        padding: 10px;
+        margin:10px;
+        border: 2px double black;
+    }
+    #div1:target{
+        color: orange;
+        background-color: green;
+        border: 3px solid purple;
+    }
+    #div2:target {
+        background-color: blue;
+        color: yellow;
+        width: 10px;
+        border: 10px dotted green;
+    }
+</style>
+</html>
